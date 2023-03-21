@@ -1,0 +1,199 @@
+header {
+    position: relative;
+}
+
+.main-title {
+    color: #00587F;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+    display: block;
+    max-width: 480px;
+    min-width: 340px;
+    background-color: transparent;
+}
+
+.main-contacto .acciones-llamar,
+.main-contacto .acciones-email,
+.main-contacto .acciones-maps {
+    margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+    border-radius: 80%;
+    height: 50px;
+}
+
+.main-contacto.horario {
+    padding: 0;
+    position: relative;
+    background-color: white;
+
+}
+
+.main-contacto .horario-texto {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    background-color: rgba(0, 88, 127, 0.3);
+    color: white;
+    font-size: 1.2rem;
+}
+
+#formulario h4 {
+    background-color: white;
+    padding: 0.1rem 0.2rem;
+    text-align: center;
+    line-height: 1.15rem;
+
+}
+
+.formulario-terminos {
+    
+}
+
+#terms-conditions {
+    box-shadow: none;
+    width: 5%;
+}
+
+#cabecera-contacto {
+    padding: 0;
+}
+
+.main-contacto.acciones {
+}
+
+.cabecera-contacto.presentacion {
+    padding-left: 0.2rem;
+}
+
+.remove {
+    display: none !important;
+}
+
+.mensaje-gracias {
+    background-color: rgba(0, 88, 127, 0.3);
+    text-align: center;
+}
+
+.main-contacto {
+    background-color: #f2f2f2;
+    padding: 0 0.2rem;
+    text-align: left;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0.1rem;
+}
+
+.main-contacto div {
+    line-height: 0.5rem;
+}
+
+.main-flex {
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2000;
+}
+
+.overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #00B1FF;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+
+@media (min-width: 40rem) {
+
+    main {
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 1.15em;
+    }
+
+    #cabecera-contacto {
+    }
+
+    .cabecera-contacto.presentacion {
+        padding-left: 0.6rem;
+    }
+
+    .main-contacto.acciones {
+    }
+
+
+
+    .main-contacto .acciones-llamar,
+    .main-contacto .acciones-email,
+    .main-contacto .acciones-maps {
+        height: 100px;
+    }
+
+    #formulario h4 {
+        background-color: transparent;
+    }
+
+    .main-flex {
+
+    }
+
+    #formulario {
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .popup {
+        width: 50%;
+    }
+
+}

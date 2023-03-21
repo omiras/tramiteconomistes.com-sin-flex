@@ -1,0 +1,63 @@
+header {
+    position: relative;
+}
+
+.main-title {
+    color: #00587F;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section {
+    
+
+}
+
+.team-member__photo {
+    width: auto;
+    max-width: 512px;
+    max-height: 40vh;
+    min-height: 267px;
+    margin-bottom: 1rem;
+    filter: grayscale(100%);
+}
+
+.section__team-member:hover .team-member__photo {
+    filter: grayscale(0);
+}
+
+.section__team-member:hover .team-member__description {
+    display: block;
+}
+
+.team-member__description .description__name {
+    color: #00B1FF;
+}
+
+.team-member__description .description__position {
+    color: white;
+}
+
+.section__team-member {
+    position: relative;
+    text-align: center;
+}
+
+.team-member__description {
+    position: absolute;
+    background-color: rgba(0, 88, 127, 0.90);
+    overflow: hidden;
+    padding-left: 0.1rem;
+    bottom: 6%;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+@media (min-width: 50rem) {
+    .main-title {
+        margin-top: 3rem;
+        font-size: 3.5rem;
+    }
+}
